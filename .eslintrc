@@ -1,0 +1,7 @@
+{
+  "extends": ["plugin:vue/recommended", "plugin:prettier/recommended"],
+  "rules": {
+    "vue/html-self-closing": "off",
+    "vue/html-indent": "tab"
+  }
+}
