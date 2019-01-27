@@ -22,6 +22,6 @@ body > * {
 }
 
 body {
-  background: linear-gradient(to right top, #e8f1f2 0%, #1b98e0 100%);
+  background: linear-gradient(to right top, #5cbdaa 0%, #1b98e0 100%);
 }
 </style>
