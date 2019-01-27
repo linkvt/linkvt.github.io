@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 * {
   font-family: "Lato", sans-serif;
 }
