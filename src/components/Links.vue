@@ -16,7 +16,7 @@
       link="https://www.xing.com/profile/Vincent_Link/"
     />
     <Link
-      icon="envelope"
+      :icon="['far', 'envelope']"
       name="Mail"
       link="mailto:mail@linkvt.de"
     />
