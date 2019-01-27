@@ -25,14 +25,12 @@ export default {
 <style lang="scss" scoped>
 .profile {
   display: grid;
-  // align-items: center;
   justify-items: center;
-  // justify-content: center;
 
   .profile-picture {
-    height: 12em;
-    border-radius: 12em;
-    margin: 1em 0;
+    height: 15em;
+    border-radius: 10em;
+    margin: 1.5em 0;
   }
 
   .name {
@@ -45,7 +43,7 @@ export default {
   }
 
   .links {
-    margin: 1em 0;
+    margin: 2em 0;
   }
 }
 </style>
