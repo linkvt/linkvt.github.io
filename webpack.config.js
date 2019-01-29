@@ -13,11 +13,18 @@ module.exports = (env, argv) => {
     },
     module: {
       rules: [{
-          test: /\.css$/,
-          use: [styleLoader, "css-loader"]
-        }, {
-          test: /\.scss$/,
-          use: [styleLoader, "css-loader", "sass-loader"]
+          test: /\.(css|scss)$/,
+          use: [
+            styleLoader,
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 2, // next two loaders should be applied on imports => postcss-loader, sass-loader
+              },
+            },
+            "postcss-loader",
+            "sass-loader"
+          ]
         },
         {
           test: /\.html$/,
