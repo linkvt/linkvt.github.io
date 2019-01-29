@@ -24,8 +24,9 @@ export default {
 
 <style lang="scss" scoped>
 .profile {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .profile-picture {
     height: 15em;

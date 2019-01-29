@@ -33,8 +33,7 @@ export default {
 
 <style lang="scss" scoped>
 .links {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
 
   margin: 1em 0;
 }

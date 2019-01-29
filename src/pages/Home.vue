@@ -14,8 +14,8 @@ export default {
 
 <style lang="scss">
 .content {
-  display: grid;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 </style>

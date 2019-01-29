@@ -26,8 +26,7 @@ export default {
 
 <style lang="scss" scoped>
 .link {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
   align-items: center;
 
   margin: 0 0.2em;
