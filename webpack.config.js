@@ -1,4 +1,4 @@
-const CleanWebpackPlugin = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
@@ -40,6 +40,7 @@ module.exports = (env, argv) => {
           use: [{
             loader: "url-loader",
             options: {
+              esModule: false,
               limit: 8192
             }
           }]
@@ -56,7 +57,7 @@ module.exports = (env, argv) => {
       ]
     },
     plugins: [
-      new CleanWebpackPlugin(["dist"]),
+      new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
       new HtmlWebPackPlugin({
         template: "src/index.html",
