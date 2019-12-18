@@ -10,6 +10,7 @@
     <div class="title">
       IT Architect & Software Engineer
     </div>
+    <div>in Stuttgart</div>
     <Links class="links"></Links>
   </section>
 </template>
