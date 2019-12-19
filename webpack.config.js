@@ -58,17 +58,12 @@ module.exports = (env, argv) => {
     },
     plugins: [
       new CleanWebpackPlugin(),
-      new MiniCssExtractPlugin({
-        filename: '[name].[contenthash].css'
-      }),
+      new MiniCssExtractPlugin(),
       new HtmlWebPackPlugin({
         template: "src/index.html",
         filename: "index.html"
       }),
       new VueLoaderPlugin()
-    ],
-    output: {
-      filename: '[name].[contenthash].js',
-    }
+    ]
   }
 };
