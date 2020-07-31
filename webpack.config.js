@@ -9,61 +9,65 @@ module.exports = (env, argv) => {
 
   return {
     resolve: {
-      extensions: [".js", ".json", ".vue"]
+      extensions: [".js", ".json", ".vue"],
     },
     module: {
-      rules: [{
+      rules: [
+        {
           test: /\.(css|scss)$/,
           use: [
             styleLoader,
             {
-              loader: 'css-loader',
+              loader: "css-loader",
               options: {
+                esModule: false,
                 importLoaders: 2, // next two loaders should be applied on imports => postcss-loader, sass-loader
               },
             },
             "postcss-loader",
-            "sass-loader"
-          ]
+            "sass-loader",
+          ],
         },
         {
           test: /\.html$/,
           use: {
             loader: "html-loader",
             options: {
-              minimize: true
-            }
-          }
+              minimize: true,
+            },
+          },
         },
         {
           test: /\.(png|jpg|gif)$/,
-          use: [{
-            loader: "url-loader",
-            options: {
-              esModule: false,
-              limit: 8192
-            }
-          }]
+          use: [
+            {
+              loader: "url-loader",
+              options: {
+                esModule: false,
+                limit: 8192,
+              },
+            },
+          ],
         },
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          use: ["babel-loader"]
+          use: ["babel-loader"],
         },
         {
           test: /\.vue$/,
-          use: ["vue-loader"]
-        }
-      ]
+          use: ["vue-loader"],
+        },
+      ],
     },
     plugins: [
       new CleanWebpackPlugin(),
       new MiniCssExtractPlugin(),
       new HtmlWebPackPlugin({
         template: "src/index.html",
-        filename: "index.html"
+        filename: "index.html",
       }),
-      new VueLoaderPlugin()
-    ]
-  }
+      new VueLoaderPlugin(),
+    ],
+  };
 };
