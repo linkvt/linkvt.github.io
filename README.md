@@ -15,4 +15,3 @@ Start a live development server with `npm start` to auto-build and refresh the w
 
 ### CI
 Github actions are used to build the website in the master branch for all pushes to the dev branch.
-# linkvt.github.io
