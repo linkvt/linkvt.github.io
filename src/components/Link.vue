@@ -2,6 +2,8 @@
   <a
     class="link"
     :href="link"
+    target="_blank"
+    rel="noopener noreferrer"
   >
     <font-awesome-icon
       class="icon"
