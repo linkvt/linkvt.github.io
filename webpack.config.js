@@ -1,11 +1,12 @@
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const VueLoaderPlugin = require("vue-loader/lib/plugin");
-
+const { VueLoaderPlugin } = require("vue-loader");
 
 module.exports = (env, argv) => {
-  const styleLoader = argv.mode !== "production" ? "vue-style-loader" : MiniCssExtractPlugin.loader;
+  const styleLoader =
+    argv.mode !== "production"
+      ? "vue-style-loader"
+      : MiniCssExtractPlugin.loader;
 
   return {
     resolve: {
@@ -13,6 +14,10 @@ module.exports = (env, argv) => {
     },
     module: {
       rules: [
+        {
+          test: /\.vue$/,
+          use: ["vue-loader"],
+        },
         {
           test: /\.(css|scss)$/,
           use: [
@@ -54,15 +59,16 @@ module.exports = (env, argv) => {
           exclude: /node_modules/,
           use: ["babel-loader"],
         },
-        {
-          test: /\.vue$/,
-          use: ["vue-loader"],
-        },
       ],
     },
+    output: {
+      filename: "[name].[contenthash].bundle.js",
+      clean: true,
+    },
     plugins: [
-      new CleanWebpackPlugin(),
-      new MiniCssExtractPlugin(),
+      new MiniCssExtractPlugin({
+        filename: "[name].[contenthash].css",
+      }),
       new HtmlWebPackPlugin({
         template: "src/index.html",
         filename: "index.html",
