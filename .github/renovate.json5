@@ -1,0 +1,3 @@
+{
+  extends: ["github>linkvt/renovate-base"],
+}
