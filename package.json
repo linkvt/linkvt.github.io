@@ -27,7 +27,7 @@
     "postcss": "8.4.19",
     "postcss-loader": "6.2.1",
     "prettier": "2.7.1",
-    "sass-loader": "12.6.0",
+    "sass-loader": "13.2.0",
     "url-loader": "4.1.1",
     "vue-loader": "15.9.8",
     "vue-template-compiler": "2.6.14",
