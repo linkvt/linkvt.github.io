@@ -1,0 +1,6 @@
+{{ $fa := resources.Get "js/fontawesome/fontawesome.js" | js.Build }}
+<script src="{{ $fa.RelPermalink }}" defer></script>
+{{ $faSolid := resources.Get "js/fontawesome/regular.js" | js.Build }}
+<script src="{{ $faSolid.RelPermalink }}" defer></script>
+{{ $faBrands := resources.Get "js/fontawesome/brands.js" | js.Build }}
+<script src="{{ $faBrands.RelPermalink }}" defer></script>
