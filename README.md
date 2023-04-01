@@ -1,6 +1,6 @@
 # linkvt.github.io
 
-Repository of my simple personal website built with Vue.
+Repository of my simple personal website built with hugo.
 
 ## Setup
 
@@ -16,7 +16,7 @@ Start a live development server with `yarn start` to auto-build and refresh the 
 ### Build
 
 - `yarn` to install all dependencies
-- `yarn build` to build the project to `dist/`
+- `yarn build` to build the project to `public/`
 
 ### CI
 
