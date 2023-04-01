@@ -1,0 +1,46 @@
+baseURL: https://www.linkvt.de
+defaultContentLanguage: en
+enableRobotsTXT: true
+languageCode: en-us
+locale: en_US
+title: Vincent Link - Home
+enableInlineShortcodes: true
+
+# disable as we don't need it https://gohugo.io/content-management/taxonomies/#default-taxonomies
+disableKinds:
+  - taxonomy
+  - term
+
+imaging:
+  quality: 95
+  resampleFilter: Lanczos # see https://gohugo.io/content-management/image-processing/#resampling-filter
+
+params:
+  author: Vincent Link
+  description: >
+    Vincent Link - IT Architect with a strong focus on AWS Cloud and Kubernetes.
+    Highly motivated to solve hard problems with simple solutions, mindset of automating everything.
+
+# see https://gohugo.io/about/hugo-and-gdpr/#disable-all-services
+privacy:
+  disqus:
+    disable: true
+  googleAnalytics:
+    disable: true
+  instagram:
+    disable: true
+  twitter:
+    disable: true
+  vimeo:
+    disable: true
+  youtube:
+    disable: true
+
+module:
+  mounts:
+    - source: assets
+      target: assets
+    - source: node_modules/@fortawesome/fontawesome-free/js
+      target: assets/js/fontawesome
+    - source: ./node_modules/@fontsource/lato/files
+      target: static/css/files

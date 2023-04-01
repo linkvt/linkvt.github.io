@@ -1,6 +1,3 @@
 {
-	"recommendations": [
-		"EditorConfig.EditorConfig",
-		"mubaidr.vuejs-extension-pack"
-	]
+	"recommendations": ["EditorConfig.EditorConfig"]
 }

@@ -1,0 +1,12 @@
+- name: Github
+  url: https://github.com/linkvt
+  iconClasses: fa-brands fa-github
+- name: LinkedIn
+  url: https://www.linkedin.com/in/vincent-link-72936a134/
+  iconClasses: fa-brands fa-linkedin
+- name: Xing
+  url: https://www.xing.com/profile/Vincent_Link/
+  iconClasses: fa-brands fa-xing
+- name: Mail
+  url: mailto:mail@linkvt.de
+  iconClasses: fa-regular fa-envelope
