@@ -36,9 +36,9 @@
     "webpack-dev-server": "4.13.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.3.0",
-    "@fortawesome/free-brands-svg-icons": "6.3.0",
-    "@fortawesome/free-regular-svg-icons": "6.3.0",
+    "@fortawesome/fontawesome-svg-core": "6.4.0",
+    "@fortawesome/free-brands-svg-icons": "6.4.0",
+    "@fortawesome/free-regular-svg-icons": "6.4.0",
     "@fortawesome/vue-fontawesome": "2.0.10",
     "normalize.css": "8.0.1",
     "vue": "2.7.14"
