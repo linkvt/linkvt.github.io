@@ -10,3 +10,6 @@
 - name: Mail
   url: mailto:mail@linkvt.de
   iconClasses: fa-regular fa-envelope
+- name: raydak GmbH
+  url: https://www.raydak.de
+  iconClasses: fa-regular fa-building
