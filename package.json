@@ -19,7 +19,7 @@
 		"prettier": "2.8.8",
 		"prettier-plugin-go-template": "0.0.13",
 		"prettier-plugin-tailwindcss": "0.2.8",
-		"rimraf": "4.4.1"
+		"rimraf": "5.0.0"
 	},
 	"scripts": {
 		"build": "yarn clean && yarn build:tailwind && yarn build:hugo",
