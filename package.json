@@ -5,7 +5,7 @@
 	"license": "MIT",
 	"private": true,
 	"dependencies": {
-		"@fontsource/lato": "5.0.3",
+		"@fontsource/lato": "5.0.11",
 		"@fortawesome/fontawesome-free": "6.4.2",
 		"@tailwindcss/typography": "0.5.9",
 		"hugo-bin": "0.111.0",
