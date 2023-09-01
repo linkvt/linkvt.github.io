@@ -781,10 +781,10 @@ http2-wrapper@^2.1.10:
     quick-lru "^5.1.1"
     resolve-alpn "^1.2.0"
 
-hugo-bin@0.111.0:
-  version "0.111.0"
-  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.111.0.tgz#1b86247b3665827871afa013fef817d8822fb072"
-  integrity sha512-raVol9zsi91AtNIds9hcjNTuLBiolrlfPonM8CohcrBlthAJX6bqFDkPYkqa2rF/HupkQEHvMSkaIw1nRmwnbA==
+hugo-bin@0.114.2:
+  version "0.114.2"
+  resolved "https://registry.yarnpkg.com/hugo-bin/-/hugo-bin-0.114.2.tgz#f356c398c904fbd13a030240d3c6e46dc96ad4fd"
+  integrity sha512-a7F8wArDACHm10cQnpDe9kljNc3zcsy5uK3myD5TTVU5QZ+75ZYi0IcP9YmQNDg57jos9p0ggOCu510SueH1yw==
   dependencies:
     "@xhmikosr/bin-wrapper" "^11.0.2"
     pkg-conf "^4.0.0"
