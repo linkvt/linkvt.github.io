@@ -14,10 +14,10 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
-"@fontsource/lato@5.0.13":
-  version "5.0.13"
-  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.13.tgz#e82b10010150bbf733e5022dd9347aa327af5723"
-  integrity sha512-2S/yMMdwSYQhpxukx3hEoZnjbltJFOD29e/r9lmHcmb3bkkN44sU/8cFlUEV6XJRmi7o0wz1GAkj3m6UacfZVQ==
+"@fontsource/lato@5.0.17":
+  version "5.0.17"
+  resolved "https://registry.yarnpkg.com/@fontsource/lato/-/lato-5.0.17.tgz#7c75c443da1e3ae203ed1977b6455bb15c62c106"
+  integrity sha512-K9znoLAeUsm4tqp6zYv/oXBxhVDUeYPjRz6Yc7rKyBOKKOS9eXxkEcxD8pT9klnvCky4/pYXKJ9lab01LXYSEA==
 
 "@fortawesome/fontawesome-free@6.4.2":
   version "6.4.2"
