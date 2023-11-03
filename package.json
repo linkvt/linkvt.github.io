@@ -22,14 +22,14 @@
 		"rimraf": "5.0.5"
 	},
 	"scripts": {
-		"build": "yarn clean && yarn build:tailwind && yarn build:hugo",
-		"build:tailwind": "NODE_ENV=production yarn tailwind --minify",
+		"build": "pnpm clean && pnpm build:tailwind && pnpm build:hugo",
+		"build:tailwind": "NODE_ENV=production pnpm tailwind --minify",
 		"build:hugo": "hugo --minify",
 		"clean": "rimraf public/",
-		"dev": "concurrently yarn:dev:*",
-		"dev:tailwind": "yarn tailwind --watch",
+		"dev": "concurrently pnpm:dev:*",
+		"dev:tailwind": "pnpm tailwind --watch",
 		"dev:hugo": "hugo server",
-		"start": "yarn dev",
+		"start": "pnpm dev",
 		"tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css"
 	},
 	"hugo-bin": {

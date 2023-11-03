@@ -9,16 +9,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: pnpm/action-setup@v2
         with:
-          cache: yarn
+          version: 8
+
+      - uses: actions/setup-node@v4
+        with:
+          cache: pnpm
           node-version: 18
 
-      - name: yarn install and build
-        run: |
-          yarn
-          yarn build
+      - run: pnpm i
+
+      - run: pnpm build
         env:
           CI: true
 

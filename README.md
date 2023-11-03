@@ -7,16 +7,16 @@ Repository of my simple personal website built with hugo.
 ### Dependencies
 
 - nodejs
-- yarn
+- pnpm
 
 ### Development
 
-Start a live development server with `yarn start` to auto-build and refresh the website after changes in the code.
+Start a live development server with `pnpm start` to auto-build and refresh the website after changes in the code.
 
 ### Build
 
-- `yarn` to install all dependencies
-- `yarn build` to build the project to `public/`
+- `pnpm i` to install all dependencies
+- `pnpm build` to build the project to `public/`
 
 ### CI
 
