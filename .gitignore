@@ -1,6 +1,5 @@
 .DS_STORE
 node_modules/
-yarn-error.log
 
 assets/css/style.css
 
