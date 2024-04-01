@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@fontsource/lato':
-    specifier: 5.0.18
-    version: 5.0.18
+    specifier: 5.0.20
+    version: 5.0.20
   '@fortawesome/fontawesome-free':
     specifier: 6.5.1
     version: 6.5.1
@@ -61,8 +61,8 @@ packages:
       regenerator-runtime: 0.14.0
     dev: true
 
-  /@fontsource/lato@5.0.18:
-    resolution: {integrity: sha512-lJa0f4MPXtHsZsLz37wo7d4m5odfOdwCNRg0IjV06ri/fIPypJLEuUB12oWCJ38DDD/XhKVSQPo8BWV8CRBhzQ==}
+  /@fontsource/lato@5.0.20:
+    resolution: {integrity: sha512-2ej7KDuTFoea6Q2hWjx3Png1+MdNcW4V6l7sw/vNauuxCv9xBIZCmpXnTz9eVdj/5Ui//jiWWiQk57mGwjCNwA==}
     dev: false
 
   /@fortawesome/fontawesome-free@6.5.1:
