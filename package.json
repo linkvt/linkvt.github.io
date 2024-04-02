@@ -1,38 +1,43 @@
 {
-	"name": "website",
-	"version": "1.0.0",
-	"author": "Vincent Link <mail@linkvt.de>",
-	"license": "MIT",
-	"private": true,
-	"dependencies": {
-		"@fontsource/lato": "5.0.20",
-		"@fortawesome/fontawesome-free": "6.5.1",
-		"@tailwindcss/typography": "0.5.12",
-		"hugo-bin": "0.121.1",
-		"tailwindcss": "3.4.3"
-	},
-	"devDependencies": {
-		"autoprefixer": "10.4.19",
-		"concurrently": "8.2.2",
-		"postcss": "8.4.38",
-		"postcss-cli": "11.0.0",
-		"prettier": "3.2.5",
-		"prettier-plugin-go-template": "0.0.15",
-		"prettier-plugin-tailwindcss": "0.5.13",
-		"rimraf": "5.0.5"
-	},
-	"scripts": {
-		"build": "pnpm clean && pnpm build:tailwind && pnpm build:hugo",
-		"build:tailwind": "NODE_ENV=production pnpm tailwind --minify",
-		"build:hugo": "hugo --minify",
-		"clean": "rimraf public/",
-		"dev": "concurrently pnpm:dev:*",
-		"dev:tailwind": "pnpm tailwind --watch",
-		"dev:hugo": "hugo server",
-		"start": "pnpm dev",
-		"tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css"
-	},
-	"hugo-bin": {
-		"buildTags": "extended"
-	}
+  "name": "website",
+  "author": "Vincent Link <mail@linkvt.de>",
+  "license": "MIT",
+  "private": true,
+  "sideEffects": false,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "react-router dev",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@fontsource/lato": "5.2.5",
+    "@icons-pack/react-simple-icons": "12.6.0",
+    "@react-router/fs-routes": "7.5.0",
+    "@react-router/node": "7.5.0",
+    "lucide-react": "0.488.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-router": "7.5.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.24.0",
+    "@react-router/dev": "7.5.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@tailwindcss/vite": "4.1.4",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
+    "eslint": "9.24.0",
+    "postcss": "8.5.3",
+    "prettier": "3.5.3",
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "tailwindcss": "4.1.4",
+    "typescript": "5.8.3",
+    "typescript-eslint": "8.30.1",
+    "vite": "6.2.6",
+    "vite-imagetools": "7.0.5",
+    "vite-tsconfig-paths": "5.1.4"
+  }
 }
