@@ -1,0 +1,100 @@
+import { SiGithub, SiLinkedin, SiXing } from "@icons-pack/react-simple-icons";
+import type { MetaFunction } from "@remix-run/node";
+import { Building, Mail, MapPin } from "lucide-react";
+import profile from "~/assets/vincent.jpg?w=500x&format=webp";
+
+export const meta: MetaFunction = () => {
+	return [
+		{ title: "Vincent Link - Home" },
+		{
+			name: "description",
+			content:
+				"Vincent Link - IT Architect with a strong focus on AWS Cloud and Kubernetes. Highly motivated to solve hard problems with simple solutions, mindset of automating everything.",
+		},
+	];
+};
+
+// eslint-disable-next-line
+const dummySimpleIconsProps: any = {};
+
+const socials = [
+	{
+		name: "Github",
+		url: "https://github.com/linkvt",
+		icon: <SiGithub {...dummySimpleIconsProps} />,
+	},
+	{
+		name: "LinkedIn",
+		url: "https://www.linkedin.com/in/vincent-link-72936a134/",
+		icon: <SiLinkedin {...dummySimpleIconsProps} />,
+	},
+	{
+		name: "Xing",
+		url: "https://www.xing.com/profile/Vincent_Link/",
+		icon: <SiXing {...dummySimpleIconsProps} />,
+	},
+	{
+		name: "Mail",
+		url: "mailto:mail@linkvt.de",
+		icon: (
+			<Mail>
+				<title>Mail</title>
+			</Mail>
+		),
+	},
+	{
+		name: "raydak GmbH",
+		url: "https://www.raydak.de",
+		icon: (
+			<Building>
+				<title>raydak GmbH</title>
+			</Building>
+		),
+	},
+];
+
+export default function Index() {
+	return (
+		<main className="flex h-full items-center justify-center bg-gradient-to-tr from-teal-300 from-20% to-sky-400">
+			<div className="flex flex-col items-center">
+				<img
+					src={profile}
+					alt="Profile"
+					className="h-full max-h-64 rounded-full"
+				/>
+				<div className="mt-4 text-5xl font-bold tracking-tight">
+					Vincent Link
+				</div>
+				<div className="mt-2 text-2xl">Cloud &amp; Kubernetes Architect</div>
+				<div className="flex gap-4">
+					<div className="flex items-center gap-1">
+						<Building size={18}>
+							<title>Working at</title>
+						</Building>
+						<span>raydak GmbH</span>
+					</div>
+					<div className="flex items-center gap-1">
+						<MapPin size={18}>
+							<title>Location</title>
+						</MapPin>
+						<span>Stuttgart</span>
+					</div>
+				</div>
+				<div className="mt-6 flex gap-1">
+					{socials.map((social) => (
+						<a
+							className="items-centerrounded flex gap-1 p-2 text-black hover:bg-black hover:bg-opacity-10"
+							href={social.url}
+							target="_blank"
+							rel="noopener noreferrer"
+							key={social.url}
+						>
+							{social.icon}
+							<span className="max-sm:hidden">{social.name}</span>
+						</a>
+					))}
+				</div>
+			</div>
+		</main>
+	);
+}

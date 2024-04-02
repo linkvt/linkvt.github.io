@@ -1,38 +1,46 @@
 {
 	"name": "website",
-	"version": "1.0.0",
 	"author": "Vincent Link <mail@linkvt.de>",
 	"license": "MIT",
 	"private": true,
+	"sideEffects": false,
+	"type": "module",
+	"scripts": {
+		"build": "remix vite:build",
+		"dev": "remix vite:dev",
+		"lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+		"preview": "vite preview",
+		"typecheck": "tsc"
+	},
 	"dependencies": {
 		"@fontsource/lato": "5.0.20",
-		"@fortawesome/fontawesome-free": "6.5.1",
-		"@tailwindcss/typography": "0.5.12",
-		"hugo-bin": "0.121.1",
+		"@icons-pack/react-simple-icons": "9.4.0",
+		"@remix-run/node": "2.8.1",
+		"@remix-run/react": "2.8.1",
+		"lucide-react": "0.364.0",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
 		"tailwindcss": "3.4.3"
 	},
 	"devDependencies": {
+		"@remix-run/dev": "2.8.1",
+		"@types/react": "18.2.74",
+		"@types/react-dom": "18.2.23",
+		"@typescript-eslint/eslint-plugin": "7.5.0",
+		"@typescript-eslint/parser": "7.5.0",
 		"autoprefixer": "10.4.19",
-		"concurrently": "8.2.2",
+		"eslint": "8.57.0",
+		"eslint-import-resolver-typescript": "3.6.1",
+		"eslint-plugin-import": "2.29.1",
+		"eslint-plugin-jsx-a11y": "6.8.0",
+		"eslint-plugin-react": "7.34.1",
+		"eslint-plugin-react-hooks": "4.6.0",
 		"postcss": "8.4.38",
-		"postcss-cli": "11.0.0",
 		"prettier": "3.2.5",
-		"prettier-plugin-go-template": "0.0.15",
 		"prettier-plugin-tailwindcss": "0.5.13",
-		"rimraf": "5.0.5"
-	},
-	"scripts": {
-		"build": "pnpm clean && pnpm build:tailwind && pnpm build:hugo",
-		"build:tailwind": "NODE_ENV=production pnpm tailwind --minify",
-		"build:hugo": "hugo --minify",
-		"clean": "rimraf public/",
-		"dev": "concurrently pnpm:dev:*",
-		"dev:tailwind": "pnpm tailwind --watch",
-		"dev:hugo": "hugo server",
-		"start": "pnpm dev",
-		"tailwind": "tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css"
-	},
-	"hugo-bin": {
-		"buildTags": "extended"
+		"typescript": "5.4.3",
+		"vite": "5.2.7",
+		"vite-imagetools": "7.0.1",
+		"vite-tsconfig-paths": "4.3.2"
 	}
 }
