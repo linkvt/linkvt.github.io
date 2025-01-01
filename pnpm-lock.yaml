@@ -9,20 +9,20 @@ importers:
   .:
     dependencies:
       '@fontsource/lato':
-        specifier: 5.1.0
-        version: 5.1.0
+        specifier: 5.1.1
+        version: 5.1.1
       '@fortawesome/fontawesome-free':
-        specifier: 6.7.1
-        version: 6.7.1
+        specifier: 6.7.2
+        version: 6.7.2
       '@tailwindcss/typography':
         specifier: 0.5.15
-        version: 0.5.15(tailwindcss@3.4.15)
+        version: 0.5.15(tailwindcss@3.4.17)
       hugo-bin:
-        specifier: 0.136.3
-        version: 0.136.3
+        specifier: 0.137.2
+        version: 0.137.2
       tailwindcss:
-        specifier: 3.4.15
-        version: 3.4.15
+        specifier: 3.4.17
+        version: 3.4.17
     devDependencies:
       autoprefixer:
         specifier: 10.4.20
@@ -59,11 +59,11 @@ packages:
     resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
     engines: {node: '>=6.9.0'}
 
-  '@fontsource/lato@5.1.0':
-    resolution: {integrity: sha512-wYa/DeUS/WuaJoR/vY+v74W6gtOm98DgoRdSj4FuMXe0E0XYGAEVOgh+DxusJR3EglRZU6ZZDF7vZ881vV1KGA==}
+  '@fontsource/lato@5.1.1':
+    resolution: {integrity: sha512-sHnUKhfLcCxa2DTfXlpFntXJAFJ/s4kmmRFRf29Dp7dBcdFdlvWjCbXPZf1rhkzdE1vqTwBVlOGSX/kFgIOkhg==}
 
-  '@fortawesome/fontawesome-free@6.7.1':
-    resolution: {integrity: sha512-ALIk/MOh5gYe1TG/ieS5mVUsk7VUIJTJKPMK9rFFqOgfp0Q3d5QiBXbcOMwUvs37fyZVCz46YjOE6IFeOAXCHA==}
+  '@fortawesome/fontawesome-free@6.7.2':
+    resolution: {integrity: sha512-JUOtgFW6k9u4Y+xeIaEiLr3+cjoUPiAuLXoyKOJSia6Duzb7pq+A76P9ZdPDoAoxHdHzq6gE9/jKBGXlZT8FbA==}
     engines: {node: '>=6'}
 
   '@isaacs/cliui@8.0.2':
@@ -476,8 +476,8 @@ packages:
     resolution: {integrity: sha512-kZB0wxMo0sh1PehyjJUWRFEd99KC5TLjZ2cULC4f9iqJBAmKQQXEICjxl5iPJRwP40dpeHFqqhm7tYCvODpqpQ==}
     engines: {node: '>=10.19.0'}
 
-  hugo-bin@0.136.3:
-    resolution: {integrity: sha512-vGYviePedI7LcVIceN7Ii6RHi3E2+ed/qvoqeRW/rwO3SzVPA3G4EABWs+99bvFSorMb4C0cNtaUpuLvEzuYUA==}
+  hugo-bin@0.137.2:
+    resolution: {integrity: sha512-tnq0BeOEHydDVboO3cVeq4aZ9ejzZA/iabSSuV346cQC8XwKH5rqZlA9xByJmijth4zZDeuvnDRpRVQf8NsHeA==}
     engines: {node: '>=18'}
     hasBin: true
 
@@ -556,12 +556,12 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  lilconfig@2.1.0:
-    resolution: {integrity: sha512-utWOt/GHzuUxnLKxB6dk81RoOeoNeHgbrXiuGk4yyF5qlRz+iIVWu56E2fqGHFrXz0QNUhLB/8nKqvRH66JKGQ==}
-    engines: {node: '>=10'}
-
   lilconfig@3.0.0:
     resolution: {integrity: sha512-K2U4W2Ff5ibV7j7ydLr+zLAkIg5JJ4lPn1Ltsdt+Tz/IjQ8buJ55pZAxoP34lqIiwtF9iAvtLv3JGv7CAyAg+g==}
+    engines: {node: '>=14'}
+
+  lilconfig@3.1.3:
+    resolution: {integrity: sha512-/vlFKAoH5Cgt3Ie+JLhRbwOsCQePABiU3tJ1egGvyQ+33R/vcwM2Zl2QR/LzjsBeItPt3oSVXapn+m4nQDvpzw==}
     engines: {node: '>=14'}
 
   lines-and-columns@1.2.4:
@@ -1046,8 +1046,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwindcss@3.4.15:
-    resolution: {integrity: sha512-r4MeXnfBmSOuKUWmXe6h2CcyfzJCEk4F0pptO5jlnYSIViUkVmsawj80N5h2lO3gwcmSb4n3PuN+e+GC1Guylw==}
+  tailwindcss@3.4.17:
+    resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -1153,9 +1153,9 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.0
 
-  '@fontsource/lato@5.1.0': {}
+  '@fontsource/lato@5.1.1': {}
 
-  '@fortawesome/fontawesome-free@6.7.1': {}
+  '@fortawesome/fontawesome-free@6.7.2': {}
 
   '@isaacs/cliui@8.0.2':
     dependencies:
@@ -1206,13 +1206,13 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.15)':
+  '@tailwindcss/typography@0.5.15(tailwindcss@3.4.17)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.15
+      tailwindcss: 3.4.17
 
   '@tokenizer/token@0.3.0': {}
 
@@ -1620,7 +1620,7 @@ snapshots:
       quick-lru: 5.1.1
       resolve-alpn: 1.2.1
 
-  hugo-bin@0.136.3:
+  hugo-bin@0.137.2:
     dependencies:
       '@xhmikosr/bin-wrapper': 13.0.5
       package-config: 5.0.0
@@ -1689,9 +1689,9 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  lilconfig@2.1.0: {}
-
   lilconfig@3.0.0: {}
+
+  lilconfig@3.1.3: {}
 
   lines-and-columns@1.2.4: {}
 
@@ -1849,7 +1849,7 @@ snapshots:
 
   postcss-load-config@4.0.2(postcss@8.4.49):
     dependencies:
-      lilconfig: 3.0.0
+      lilconfig: 3.1.3
       yaml: 2.3.4
     optionalDependencies:
       postcss: 8.4.49
@@ -2062,7 +2062,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwindcss@3.4.15:
+  tailwindcss@3.4.17:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -2073,7 +2073,7 @@ snapshots:
       glob-parent: 6.0.2
       is-glob: 4.0.3
       jiti: 1.21.6
-      lilconfig: 2.1.0
+      lilconfig: 3.1.3
       micromatch: 4.0.8
       normalize-path: 3.0.0
       object-hash: 3.0.0
