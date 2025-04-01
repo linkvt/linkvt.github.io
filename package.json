@@ -5,10 +5,10 @@
 	"license": "MIT",
 	"private": true,
 	"dependencies": {
-		"@fontsource/lato": "5.1.1",
+		"@fontsource/lato": "5.2.5",
 		"@fortawesome/fontawesome-free": "6.7.2",
-		"@tailwindcss/typography": "0.5.15",
-		"hugo-bin": "0.137.2",
+		"@tailwindcss/typography": "0.5.16",
+		"hugo-bin": "0.142.0",
 		"tailwindcss": "3.4.17"
 	},
 	"devDependencies": {
