@@ -1,6 +1,6 @@
 import { SiGithub, SiXing } from "@icons-pack/react-simple-icons";
 import { Building, Mail, MapPin } from "lucide-react";
-import type { MetaFunction } from "react-router";
+import { Link, type MetaFunction } from "react-router";
 import LinkedInIcon from "~/assets/icons/linkedin.svg";
 import profile from "~/assets/vincent.jpg?w=500x&format=webp";
 
@@ -95,16 +95,16 @@ export default function Index() {
 				</div>
 				<div className="mt-6 flex gap-1">
 					{socials.map((social) => (
-						<a
+						<Link
 							className="flex items-center gap-1 rounded p-2 text-black hover:bg-black/10"
-							href={social.url}
+							to={social.url}
 							target="_blank"
 							rel="noopener noreferrer"
 							key={social.url}
 						>
 							{social.icon}
 							<span className="max-sm:hidden">{social.name}</span>
-						</a>
+						</Link>
 					))}
 				</div>
 			</div>
