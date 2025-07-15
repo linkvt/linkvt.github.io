@@ -64,7 +64,7 @@ const socials = [
 
 export default function Index() {
 	return (
-		<main className="bg-linear-to-tr flex h-full items-center justify-center from-teal-300 from-20% to-sky-400">
+		<main className="flex h-full items-center justify-center bg-linear-to-tr from-teal-300 from-20% to-sky-400">
 			<div className="flex flex-col items-center">
 				<img
 					src={profile}
@@ -76,7 +76,7 @@ export default function Index() {
 				<div className="mt-4 text-5xl font-bold tracking-tight">
 					Vincent Link
 				</div>
-				<div className="mt-2 text-2xl">
+				<div className="mt-2 text-center text-2xl">
 					Cloud-Native Infrastructure &amp; Platform Engineer
 				</div>
 				<div className="flex gap-4">
