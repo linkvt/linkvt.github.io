@@ -13,14 +13,14 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@fontsource/lato": "5.2.6",
-    "@icons-pack/react-simple-icons": "13.5.0",
-    "@react-router/fs-routes": "7.6.3",
-    "@react-router/node": "7.6.3",
-    "lucide-react": "0.525.0",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-router": "7.6.3"
+    "@fontsource/lato": "5.2.7",
+    "@icons-pack/react-simple-icons": "13.8.0",
+    "@react-router/fs-routes": "7.9.3",
+    "@react-router/node": "7.9.3",
+    "lucide-react": "0.544.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "react-router": "7.9.3"
   },
   "devDependencies": {
     "@eslint/js": "9.36.0",
