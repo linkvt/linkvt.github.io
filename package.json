@@ -37,7 +37,7 @@
     "typescript": "5.9.3",
     "typescript-eslint": "8.46.2",
     "vite": "7.1.12",
-    "vite-imagetools": "8.0.0",
+    "vite-imagetools": "9.0.0",
     "vite-tsconfig-paths": "5.1.4"
   }
 }
