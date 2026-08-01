@@ -9,36 +9,36 @@ importers:
   .:
     dependencies:
       '@fontsource/lato':
-        specifier: 5.2.7
-        version: 5.2.7
+        specifier: 5.3.0
+        version: 5.3.0
       '@icons-pack/react-simple-icons':
         specifier: 13.13.0
-        version: 13.13.0(react@19.2.7)
+        version: 13.13.0(react@19.2.8)
       '@react-router/fs-routes':
-        specifier: 8.2.0
-        version: 8.2.0(@react-router/dev@8.3.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0)))(typescript@6.0.3)
+        specifier: 8.3.0
+        version: 8.3.0(@react-router/dev@8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0)))(typescript@6.0.3)
       '@react-router/node':
-        specifier: 8.2.0
-        version: 8.2.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)
+        specifier: 8.3.0
+        version: 8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)
       lucide-react:
-        specifier: 1.22.0
-        version: 1.22.0(react@19.2.7)
+        specifier: 1.27.0
+        version: 1.27.0(react@19.2.8)
       react:
-        specifier: 19.2.7
-        version: 19.2.7
+        specifier: 19.2.8
+        version: 19.2.8
       react-dom:
-        specifier: 19.2.7
-        version: 19.2.7(react@19.2.7)
+        specifier: 19.2.8
+        version: 19.2.8(react@19.2.8)
       react-router:
         specifier: 8.3.0
-        version: 8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+        version: 8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
     devDependencies:
       '@eslint/js':
         specifier: 10.0.1
         version: 10.0.1(eslint@10.8.0(jiti@2.7.0))
       '@react-router/dev':
         specifier: 8.3.0
-        version: 8.3.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0))
+        version: 8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0))
       '@tailwindcss/postcss':
         specifier: 4.3.3
         version: 4.3.3
@@ -265,8 +265,8 @@ packages:
     resolution: {integrity: sha512-+CNAzxglkrpNf/kKywqQfk74QjtceuOE7Qm+AF8miRvPF/wmmK5+OJOgVh3AVTT3RP2mH3+FOaxlE5v72owk0A==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24}
 
-  '@fontsource/lato@5.2.7':
-    resolution: {integrity: sha512-k5mum1ADbDW5cTw1Ett1eQVWeoZ6gq0ct6SFBibEhB4LRxhniChJZTBgd6ph5yBxLkN1fcnsnmicBNA4S/3nbw==}
+  '@fontsource/lato@5.3.0':
+    resolution: {integrity: sha512-0WhF/4rhrw+ErIyneKvhHn2YAl+xf8GDtllgOgOzDmeaSlLQtjpChXaQOpWhG2BchQW0WJy2zLV12Hdg0ndOMw==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -505,22 +505,12 @@ packages:
       wrangler:
         optional: true
 
-  '@react-router/fs-routes@8.2.0':
-    resolution: {integrity: sha512-QujjPJ4Yzf+UV0obx9CYb/ihiIJeElLDHImg7UnID3qFisJIv7fN9q15q14K3vkSHpyGq/CAwzyMPIhF2WMFNg==}
+  '@react-router/fs-routes@8.3.0':
+    resolution: {integrity: sha512-rElHqQQr4XO0bh2VXEBWtJvVWc2340EoZNL29qwLeZPvUTgAZDI2x/x/VnHNSiEYIMvKTJQziKM7krzWCydN8A==}
     engines: {node: '>=22.22.0'}
     peerDependencies:
-      '@react-router/dev': ^8.2.0
-      typescript: ^5.1.0 || ^6.0.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-
-  '@react-router/node@8.2.0':
-    resolution: {integrity: sha512-Zs4j+OEUeMWqhyHK1Grx9x9u+TKvyYoPk8lDoYhFf52kmleEPDo84dJaXfxwUDd0HFtjL5cYm9v3KyMFZG7ciw==}
-    engines: {node: '>=22.22.0'}
-    peerDependencies:
-      react-router: 8.2.0
-      typescript: ^5.1.0 || ^6.0.0
+      '@react-router/dev': ^8.3.0
+      typescript: ^5.1.0 || ^6.0.0 || ^7.0.0
     peerDependenciesMeta:
       typescript:
         optional: true
@@ -1243,8 +1233,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-react@1.22.0:
-    resolution: {integrity: sha512-c9o3l0PiNcgOQDW4F31BEYHudE7kgxVt3o30qMl36ZPwTxXlGB4QnLilhERvVM4uh/pl5MDyY1/gzZSYcHDtBg==}
+  lucide-react@1.27.0:
+    resolution: {integrity: sha512-rJicGl/3Fly/E0rOH1YmPZ6e49JCnKknh1ox1vpHnkfjujAkKA6sqUZvH3MTAaXXjgexyUwgNwTJzTtYuAFYJw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -1388,10 +1378,10 @@ packages:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
 
-  react-dom@19.2.7:
-    resolution: {integrity: sha512-t0BRVXvbiE/o20Hfw669rLbMCDWtYZLvmJigy2f0MxsXF+71pxhR3xOkspmsO8h3ZlNzyibAmtCa3l4lYKk6gQ==}
+  react-dom@19.2.8:
+    resolution: {integrity: sha512-rVprimfGBG3DR+Tq0IQG2DT5PxKth1WIGDmj5yPmlzr4YBe7uyE+Du4oVqTDXZSHGGGXRtTJEGSSePyQCMBglQ==}
     peerDependencies:
-      react: ^19.2.7
+      react: ^19.2.8
 
   react-refresh@0.18.0:
     resolution: {integrity: sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==}
@@ -1407,8 +1397,8 @@ packages:
       react-dom:
         optional: true
 
-  react@19.2.7:
-    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
+  react@19.2.8:
+    resolution: {integrity: sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==}
     engines: {node: '>=0.10.0'}
 
   readdirp@5.0.0:
@@ -1816,7 +1806,7 @@ snapshots:
       '@eslint/core': 1.2.1
       levn: 0.4.1
 
-  '@fontsource/lato@5.2.7': {}
+  '@fontsource/lato@5.3.0': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -1834,9 +1824,9 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@icons-pack/react-simple-icons@13.13.0(react@19.2.7)':
+  '@icons-pack/react-simple-icons@13.13.0(react@19.2.8)':
     dependencies:
-      react: 19.2.7
+      react: 19.2.8
 
   '@img/colour@1.1.0': {}
 
@@ -1972,7 +1962,7 @@ snapshots:
 
   '@oxc-project/types@0.139.0': {}
 
-  '@react-router/dev@8.3.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0))':
+  '@react-router/dev@8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0))':
     dependencies:
       '@babel/core': 7.29.7
       '@babel/generator': 7.29.7
@@ -1981,7 +1971,7 @@ snapshots:
       '@babel/preset-typescript': 7.29.7(@babel/core@7.29.7)
       '@babel/traverse': 7.29.7
       '@babel/types': 7.29.7
-      '@react-router/node': 8.3.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)
+      '@react-router/node': 8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)
       '@remix-run/node-fetch-server': 0.13.3
       babel-dead-code-elimination: 1.0.12
       chokidar: 5.0.0
@@ -1997,7 +1987,7 @@ snapshots:
       pkg-types: 2.3.1
       prettier: 3.9.1
       react-refresh: 0.18.0
-      react-router: 8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-router: 8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       semver: 7.8.5
       tinyglobby: 0.2.17
       valibot: 1.4.2(typescript@6.0.3)
@@ -2008,24 +1998,17 @@ snapshots:
       - babel-plugin-macros
       - supports-color
 
-  '@react-router/fs-routes@8.2.0(@react-router/dev@8.3.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0)))(typescript@6.0.3)':
+  '@react-router/fs-routes@8.3.0(@react-router/dev@8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0)))(typescript@6.0.3)':
     dependencies:
-      '@react-router/dev': 8.3.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0))
+      '@react-router/dev': 8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)(vite@8.1.5(jiti@2.7.0))
       minimatch: 10.2.5
     optionalDependencies:
       typescript: 6.0.3
 
-  '@react-router/node@8.2.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)':
+  '@react-router/node@8.3.0(react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(typescript@6.0.3)':
     dependencies:
       '@remix-run/node-fetch-server': 0.13.3
-      react-router: 8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
-    optionalDependencies:
-      typescript: 6.0.3
-
-  '@react-router/node@8.3.0(react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7))(typescript@6.0.3)':
-    dependencies:
-      '@remix-run/node-fetch-server': 0.13.3
-      react-router: 8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
+      react-router: 8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
     optionalDependencies:
       typescript: 6.0.3
 
@@ -2613,9 +2596,9 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-react@1.22.0(react@19.2.7):
+  lucide-react@1.27.0(react@19.2.8):
     dependencies:
-      react: 19.2.7
+      react: 19.2.8
 
   magic-string@0.30.21:
     dependencies:
@@ -2692,21 +2675,21 @@ snapshots:
 
   punycode@2.3.1: {}
 
-  react-dom@19.2.7(react@19.2.7):
+  react-dom@19.2.8(react@19.2.8):
     dependencies:
-      react: 19.2.7
+      react: 19.2.8
       scheduler: 0.27.0
 
   react-refresh@0.18.0: {}
 
-  react-router@8.3.0(react-dom@19.2.7(react@19.2.7))(react@19.2.7):
+  react-router@8.3.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       cookie-es: 3.1.1
-      react: 19.2.7
+      react: 19.2.8
     optionalDependencies:
-      react-dom: 19.2.7(react@19.2.7)
+      react-dom: 19.2.8(react@19.2.8)
 
-  react@19.2.7: {}
+  react@19.2.8: {}
 
   readdirp@5.0.0: {}
 
